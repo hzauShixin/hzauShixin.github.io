@@ -1,6 +1,19 @@
 ---
 title: "欢迎来到我的个人网站"
+format:
+  html:
+    include-before-body: _video-bg.html
+    toc: false
 ---
+
+<div class="page-content-wrapper">
+
+<!-- 个人头像（替换 src 中的链接为你自己的图片地址） -->
+<div class="avatar-container">
+  <img src="https://via.placeholder.com/140x140?text=Avatar" 
+       alt="个人头像" 
+       class="avatar-img" />
+</div>
 
 ## 👋 你好！
 
@@ -21,3 +34,5 @@ title: "欢迎来到我的个人网站"
 ## 🔗 快速导航
 
 - [关于我](about.qmd) — 了解我的背景和技能
+
+</div>

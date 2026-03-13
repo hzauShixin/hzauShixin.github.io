@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "欢迎来到我的个人网站",
-    "section": "",
-    "text": "我是 师鑫，欢迎访问我的个人主页。\n这里是我分享学习笔记、项目经历和个人感悟的地方。"
-  },
-  {
     "objectID": "index.html#你好",
     "href": "index.html#你好",
     "title": "欢迎来到我的个人网站",
-    "section": "",
-    "text": "我是 师鑫，欢迎访问我的个人主页。\n这里是我分享学习笔记、项目经历和个人感悟的地方。"
+    "section": "👋 你好！",
+    "text": "👋 你好！\n我是 师鑫，欢迎访问我的个人主页。\n这里是我分享学习笔记、项目经历和个人感悟的地方。"
   },
   {
     "objectID": "index.html#近期动态",
@@ -28,18 +21,18 @@
     "text": "🔗 快速导航\n\n关于我 — 了解我的背景和技能"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "关于我",
-    "section": "",
-    "text": "你好！我是 师鑫，目前就读于华中农业大学。\n学号：2025303120092 专业：资源利用与植物保护 研究方向：绿肥"
-  },
-  {
     "objectID": "about.html#个人简介",
     "href": "about.html#个人简介",
     "title": "关于我",
-    "section": "",
-    "text": "你好！我是 师鑫，目前就读于华中农业大学。\n学号：2025303120092 专业：资源利用与植物保护 研究方向：绿肥"
+    "section": "👤 个人简介",
+    "text": "👤 个人简介\n你好！我是 师鑫，目前就读/就职于华中农业大学。 学号：2025303120092\n专业：资源利用与植物保护"
+  },
+  {
+    "objectID": "about.html#研究方向绿肥",
+    "href": "about.html#研究方向绿肥",
+    "title": "关于我",
+    "section": "研究方向：绿肥",
+    "text": "研究方向：绿肥"
   },
   {
     "objectID": "about.html#教育背景",

@@ -1,9 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
 
 website:
-  title: "hzauShixin 的个人网站"
+  title: "师鑫的个人网站"
   navbar:
     left:
       - href: index.qmd
@@ -15,4 +17,5 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: full
