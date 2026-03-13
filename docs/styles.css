@@ -14,21 +14,10 @@
 }
 
 /* ============================================
-   动态视频背景
+   图片背景（由 _video-bg.html 注入）
    ============================================ */
 
-#video-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-  pointer-events: none;
-}
-
-/* 视频上的半透明遮罩，确保文字可读 */
+/* 背景图片上的半透明遮罩，确保文字可读 */
 body::before {
   content: "";
   position: fixed;
@@ -36,7 +25,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.25);
   z-index: -1;
 }
 
@@ -47,12 +36,12 @@ body::before {
 body {
   background: transparent;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-  color: #f0f0f0;
+  color: #111111;
   margin: 0;
   padding: 0;
 }
 
-/* 主内容区域居中 + 半透明背景卡片 */
+/* 主内容区域居中 */
 .quarto-container,
 #quarto-content,
 main.content {
@@ -61,15 +50,15 @@ main.content {
   padding: 2rem 1.5rem 3rem !important;
 }
 
-/* 内容卡片背景 */
+/* 内容卡片背景（白色半透明） */
 .page-content-wrapper {
-  background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2rem 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   margin-top: 1rem;
 }
 
@@ -78,37 +67,35 @@ main.content {
    ============================================ */
 
 .navbar {
-  background: rgba(20, 20, 20, 0.65) !important;
+  background: rgba(255, 255, 255, 0.75) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand,
 .nav-link {
-  color: #f0f0f0 !important;
+  color: #1a1a1a !important;
   font-weight: 500;
 }
 
 .nav-link:hover {
-  color: #ffffff !important;
-  text-shadow: 0 0 8px rgba(255,255,255,0.5);
+  color: #0056b3 !important;
 }
 
 /* ============================================
-   标题和文字
+   标题和文字（全部黑色）
    ============================================ */
 
 h1, h2, h3, h4 {
-  color: #ffffff;
-  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+  color: #111111;
   margin-top: 1.5rem;
 }
 
 h1 {
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 2px solid rgba(255,255,255,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
   padding-bottom: 0.5rem;
   margin-bottom: 1.2rem;
 }
@@ -119,29 +106,29 @@ h2 {
 }
 
 p, li {
-  color: #e8e8e8;
+  color: #111111;
   line-height: 1.8;
   font-size: 1rem;
 }
 
 a {
-  color: #7dd3fc;
+  color: #0056b3;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #bfdbfe;
+  color: #003d82;
   text-decoration: underline;
 }
 
 strong {
-  color: #ffffff;
+  color: #111111;
 }
 
 hr {
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
   margin: 1.5rem 0;
 }
 
@@ -159,8 +146,8 @@ hr {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   margin: 0 auto;
@@ -168,34 +155,43 @@ hr {
 
 .avatar-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* ============================================
-   表格
+   表格（浅蓝色背景）
    ============================================ */
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
+  background: #e8f4fd;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th {
-  background: rgba(255,255,255,0.15);
-  color: #ffffff;
+  background: #b8d9f0;
+  color: #111111;
   padding: 0.6rem 1rem;
   text-align: left;
+  font-weight: 600;
 }
 
 td {
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  color: #e0e0e0;
+  border-bottom: 1px solid #c8e0f0;
+  color: #111111;
+  background: #e8f4fd;
+}
+
+tr:last-child td {
+  border-bottom: none;
 }
 
 tr:hover td {
-  background: rgba(255,255,255,0.05);
+  background: #d4ebf8;
 }
 
 /* ============================================
@@ -203,7 +199,7 @@ tr:hover td {
    ============================================ */
 
 ul li::marker {
-  color: #7dd3fc;
+  color: #0056b3;
 }
 
 /* ============================================

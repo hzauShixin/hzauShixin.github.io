@@ -8,9 +8,9 @@ format:
 
 <div class="page-content-wrapper">
 
-<!-- 个人头像（替换 src 中的链接为你自己的图片地址） -->
+<!-- 个人头像 -->
 <div class="avatar-container">
-  <img src="https://via.placeholder.com/140x140?text=Avatar" 
+  <img src="self.jpg" 
        alt="个人头像" 
        class="avatar-img" />
 </div>
