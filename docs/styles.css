@@ -1,0 +1,26 @@
+/* 自定义样式 */
+
+/* 导航栏字体 */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* 正文最大宽度 */
+body {
+  max-width: 900px;
+}
+
+/* 标题颜色 */
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* 链接颜色 */
+a {
+  color: #3498db;
+}
+
+a:hover {
+  color: #1a6ea8;
+}

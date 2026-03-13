@@ -1,0 +1,31 @@
+---
+title: "关于我"
+---
+
+## 👤 个人简介
+
+你好！我是 **hzauShixin**，目前就读/就职于华中农业大学。
+
+---
+
+## 🎓 教育背景
+
+- **华中农业大学** — 本科/研究生
+
+---
+
+## 💻 技能专长
+
+| 技能 | 熟练程度 |
+|------|----------|
+| R 语言 | ⭐⭐⭐⭐ |
+| Python | ⭐⭐⭐ |
+| 数据可视化 | ⭐⭐⭐⭐ |
+| Quarto / R Markdown | ⭐⭐⭐⭐ |
+
+---
+
+## 📬 联系方式
+
+- 📧 Email：your_email@example.com
+- 🐙 GitHub：[hzauShixin](https://github.com/hzauShixin)
