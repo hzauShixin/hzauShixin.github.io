@@ -9,6 +9,9 @@ echo.
 set TEMP=C:\quarto-tmp
 set TMP=C:\quarto-tmp
 
+:: 设置 Quarto 路径
+set PATH=%PATH%;D:\Positron\resources\app\quarto\bin
+
 :: 切换到项目目录
 cd /d C:\quarto-site\my-website
 
@@ -28,6 +31,7 @@ git commit -m "Update website content"
 
 echo.
 echo [3/3] 正在推送到 GitHub...
+git pull origin main --rebase
 git push origin main
 if %errorlevel% neq 0 (
     echo.
